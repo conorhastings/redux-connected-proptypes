@@ -4,11 +4,15 @@ PropTypes are a great development tool in `React`. Redux is an amazing module fo
 
 **NOTE: ONLY WORKS WITH ES6 CLASS COMPONENTS AND FUNCTIONAL COMPONENTS**
 
+### Install
+
+`npm i redux-connected-proptypes --save`
+
 ### Args
 1. `component` - the React Component with propTypes defined to be injected from global redux state.
 2. `ignored` - an optional array of propType definitions that you do not want injected from global state. 
 
-## How To Use
+### How To Use
 **For a more in depth example see <a href="https://github.com/conorhastings/redux-proptypes-connect">here</a>**
 
 This example assumes you are using redux and have rendered your app wrapped in `Provider`
