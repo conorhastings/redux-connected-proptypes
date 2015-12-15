@@ -1,0 +1,42 @@
+{
+  "name": "redux-connected-proptypes",
+  "version": "0.0.1",
+  "description": "an interface for defining React component props using redux, react-redux and PropTypes",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conorhastings/redux-connected-proptypes.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react-redux",
+    "connect",
+    "proptypes",
+    "prop-types",
+    "props",
+    "flux",
+    "relay"
+  ],
+  "author": "Conor Hastings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conorhastings/redux-connected-proptypes/issues"
+  },
+  "homepage": "https://github.com/conorhastings/redux-connected-proptypes#readme",
+  "peerDependencies": {
+    "react": "^0.14.3",
+    "react-redux": "^4.0.1",
+    "redux": "^3.0.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "react-redux": "^4.0.1"
+  }
+}
