@@ -19,7 +19,7 @@ This example assumes you are using redux and have rendered your app wrapped in `
 
 ```js
 import React from 'react';
-import reduxConnectedPropTypes from './map-props-from-proptypes';
+import reduxConnectedPropTypes from 'redux-connected-proptypes';
 
 const Animals = ({animals}) => {
   return (
