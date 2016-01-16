@@ -1,5 +1,0 @@
-language: node_js
-node_js:
-  - "5.4.1"
-env:
-  - TEST_BROWSER=firefox
