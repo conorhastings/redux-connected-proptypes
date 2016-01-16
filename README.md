@@ -4,6 +4,8 @@ PropTypes are a great development tool in `React`. Redux is an amazing module fo
 
 **NOTE: ONLY WORKS WITH ES6 CLASS COMPONENTS AND FUNCTIONAL COMPONENTS**
 
+[![Circle CI](https://circleci.com/gh/conorhastings/redux-connected-proptypes.svg?style=svg)](https://circleci.com/gh/conorhastings/redux-connected-proptypes)
+
 ### Install
 
 `npm i redux-connected-proptypes --save`
