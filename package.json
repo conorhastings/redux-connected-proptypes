@@ -1,6 +1,6 @@
 {
   "name": "redux-connected-proptypes",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "an interface for defining React component props using redux, react-redux and PropTypes",
   "main": "dist/index.js",
   "browserify": {
