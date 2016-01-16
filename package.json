@@ -3,8 +3,21 @@
   "version": "0.0.1",
   "description": "an interface for defining React component props using redux, react-redux and PropTypes",
   "main": "dist/index.js",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "browserify test/index.js | tap-closer | smokestack -b firefox | faucet",
     "build": "babel src --out-dir dist",
     "prepublish": "npm run build"
   },
@@ -37,6 +50,18 @@
   "devDependencies": {
     "babel-cli": "^6.3.17",
     "babel-preset-es2015": "^6.3.13",
-    "react-redux": "^4.0.1"
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "faucet": "0.0.1",
+    "react": "^0.14.3",
+    "react-addons-test-utils": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-redux": "^4.0.1",
+    "redux": "^3.0.5",
+    "smokestack": "^3.4.1",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.4.0",
+    "tape-catch": "^1.0.4"
   }
 }
