@@ -18,6 +18,7 @@
   },
   "scripts": {
     "test": "npm run build && browserify test/index.js | tap-closer | smokestack -b firefox | faucet",
+    "test-dev": "npm run build && browserify test/index.js | smokestack | faucet",
     "build": "babel src --out-dir dist",
     "prepublish": "npm run build"
   },

@@ -1,6 +1,22 @@
 import { connect } from 'react-redux';
+
 /**
- * Takes in a React Component and returns connected Component with props defined on PropTypes
+ * Takes in propTypes to be injected into components, returns function to be passed to react-redux connect
+ * 
+ * @param {array} propTypes - the props to inject into component
+ * @returns {function} function to be passed to `connect` that informs slice of state to take from global state.
+ */
+const mapProps = (propTypes) => {
+  return state => {
+    return propTypes.reduce((props, type) => {
+      props[type] = state[type];
+      return props;
+    }, {});
+  };
+};
+
+/**
+ * Takes in a React Component and returns connected Component with props defined on propTypes
  * injected into the Component
  * 
  * @param {React Component} component - the React Component to have props injected
@@ -10,15 +26,6 @@ import { connect } from 'react-redux';
  * global redux state.
  */
 export default function reduxConnectedPropTypes(component, ignored = []) {
-  const mapProps = state => {
-    let props = {};
-    const propTypes = Object.keys(component.propTypes);
-    propTypes.forEach(type => {
-      if (ignored.indexOf(type) === -1) {
-        props[type] = state[type];
-      }
-    });
-    return props;
-  };
-  return connect(mapProps)(component);
+  const propTypes = Object.keys(component.propTypes).filter(prop => ignored.indexOf(prop) === -1);
+  return connect(mapProps(propTypes))(component);
 }
