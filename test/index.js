@@ -106,12 +106,3 @@ test('component recieves animals but name through connected propType if name is 
 	assert.ok(component.renderedElement.props.name === undefined, 'name prop does not exist');
 	assert.end();
 });
-
-
-
-
-
-
-
-
-
