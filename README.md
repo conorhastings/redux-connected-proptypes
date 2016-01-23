@@ -1,6 +1,6 @@
 ## Redux Connected PropTypes
 
-PropTypes are a great development tool in `React`. Redux is an amazing module for maintaining a single global state for your application. Why not use both together? *Redux Connected PropTypes* consumes a react component(with propTypes) and returns a `connected` version of that component in `react-redux` parlance with the props defined on the compoents `propTypes` injected into the component instance from the redux global state.
+`propTypes` are a great development tool in `React`. `Redux` is an amazing module for maintaining a single global state for your application. Why not use both together? *Redux Connected PropTypes* consumes a `React` Component(with propTypes) and returns a `connected` version of that component in `react-redux` parlance with the props defined on the compoents `propTypes` injected into the component instance from the redux global state.
 
 **NOTE: ONLY WORKS WITH ES6 CLASS COMPONENTS AND FUNCTIONAL COMPONENTS**
 
