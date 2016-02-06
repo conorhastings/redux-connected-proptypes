@@ -17,7 +17,7 @@
 ### How To Use
 **For a more in depth example see <a href="https://github.com/conorhastings/redux-proptypes-connect">here</a>**
 
-This example assumes you are using redux and have rendered your app wrapped in `Provider`
+This example assumes you are using `redux` and `react-redux` and have rendered your app wrapped in `Provider`
 
 ```js
 import React from 'react';
